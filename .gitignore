@@ -1,0 +1,19 @@
+# Dependencies / generated output
+/node_modules
+/.next/
+/out/
+/build/
+/.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Secrets: NEVER commit real environment files
+.env
+.env.*
+!.env.example
+
+# Miscellaneous
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-error.log*

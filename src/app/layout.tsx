@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import { appConfig } from "@/lib/config";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: `${appConfig.name} | WhatsApp Smart To-Do`,
+  description: appConfig.tagline,
+  robots: { index: false, follow: false },
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body className="antialiased">{children}</body>
+    </html>
+  );
+}

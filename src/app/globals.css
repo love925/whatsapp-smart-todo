@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #14233b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #c5e5fa;
+  color: #14233b;
+}
+
+/* Subtle scrollbars without browser-specific dependencies */
+* {
+  scrollbar-color: #d1dbe7 transparent;
+}
